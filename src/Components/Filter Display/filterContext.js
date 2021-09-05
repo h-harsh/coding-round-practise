@@ -70,7 +70,7 @@ const sortByIdeal = (allProducts, state) => {
     if(state.idealFor === 'men'){
       return allProducts.filter(prod => prod.idealFor === 'men')
     }
-   else if(state.size === 'women'){
+   else if(state.idealFor === 'women'){
       return allProducts.filter(prod => prod.idealFor === 'women')
     }
   }
