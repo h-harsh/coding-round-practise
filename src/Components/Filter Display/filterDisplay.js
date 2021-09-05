@@ -40,11 +40,11 @@ export const FilterDisplay = () => {
       <legend className="cont-sub-filters">
         sortBy: Ideal For
         <label>
-          <input type="radio" name="gender" checked={state.idealFor === 'men' ? true : false } onChange={() => dispatch({type:'IDEAL_FOR', payload:'MEN'})}  /  >
+          <input type="radio" name="gender" checked={state.idealFor === 'MEN' ? true : false } onChange={() => dispatch({type:'IDEAL_FOR', payload:'MEN'})}  /  >
           Men
         </label>
         <label>
-          <input type="radio" name="gender" checked={state.idealFor === 'women' ? true : false } onChange={() => dispatch({type:'IDEAL_FOR', payload:'WOMEN'})}  /  >
+          <input type="radio" name="gender" checked={state.idealFor === 'WOMEN' ? true : false } onChange={() => dispatch({type:'IDEAL_FOR', payload:'WOMEN'})}  /  >
           Women
         </label>
       </legend>
