@@ -4,7 +4,7 @@ import {NavBar} from './Components/Nav Bar/navBar'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar/>
       <ProductListingPage/>
     </div>
