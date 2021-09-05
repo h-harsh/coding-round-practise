@@ -18,8 +18,9 @@ export const FilterDisplay = () => {
         </label>
       </legend>
       <div className="cont-sub-filters">
+        <h3>Filters</h3>
       <legend className="cont-sub-filters">
-        sortBy: Size
+         Size
         <label>
           <input type="radio" checked={state.size === 'S' ? true : false } name="size" onChange={() => dispatch({type:'SIZE', payload:'S'})} />
           S
@@ -38,7 +39,7 @@ export const FilterDisplay = () => {
         </label>
       </legend>
       <legend className="cont-sub-filters">
-        sortBy: Ideal For
+         Ideal For
         <label>
           <input type="radio" name="gender" checked={state.idealFor === 'men' ? true : false } onChange={() => dispatch({type:'IDEAL_FOR', payload:'men'})}  /  >
           Men
@@ -49,7 +50,7 @@ export const FilterDisplay = () => {
         </label>
       </legend>
       <legend className="cont-sub-filters">
-        sortBy: Brand
+         Brand
         <label>
           <input type="radio" name="brand" checked={state.brand === 'Louis phillipe' ? true : false } onChange={() => dispatch({type:'BRAND', payload:'Louis phillipe'})} />
           Louis phillipe
